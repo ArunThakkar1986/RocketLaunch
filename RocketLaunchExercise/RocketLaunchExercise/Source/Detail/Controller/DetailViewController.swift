@@ -12,6 +12,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var lblSortDate : UILabel!
     @IBOutlet weak var txtDescription : UITextView!
     @IBOutlet weak var tblTags : UITableView!
+    @IBOutlet weak var lblLocation : UILabel!
     
     var launnchVM : LaunchVM!
     
@@ -25,6 +26,7 @@ class DetailViewController: UIViewController {
         self.lblLaunchName.text = launnchVM.launchName
         self.lblSortDate.text = launnchVM.sortDate
         self.txtDescription.text = launnchVM.launchDescription
+        self.lblLocation.text = launnchVM.location
     }
 
 }
